@@ -59,7 +59,7 @@ def testSolve1():
 
     #CSV出力
     #columns=[取り出すカラム], index=[行番号の有無], header=[ヘッダーの有無]
-    df_random.to_csv("testSolve.csv", columns='Y', index=False, header=False)
+    df_random.to_csv("testSolve.csv", index=False, header=False)
 
     #散布図出力
     df.plot.scatter(x='X', y='Y')
@@ -67,6 +67,7 @@ def testSolve1():
 
 def testSolve2():
     array = [[0]*2 for i in range(100)]
+    print(array)
 
     #100回データ作成
     for i in range(1, 101):
